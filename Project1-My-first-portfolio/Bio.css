@@ -1,0 +1,524 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: auto;
+  line-height: 1.6;
+  font-family: 'Century Gothic';
+}
+header{
+  width: 100%;
+  display:flex;
+  background-color: black;
+  justify-content: flex-start;
+}
+.presentazione{
+  background-image: url('https://cdn.pixabay.com/photo/2014/12/15/12/51/coffee-568968__340.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  width: auto;
+}
+nav{
+  width:100%; float:left;
+}
+nav ul{
+  display: flex;
+  flex-direction: row;
+}
+nav ul li{
+  float:left;
+  display: inline-block;
+}
+nav ul li :last-child{
+  padding-right:5px;
+}
+nav ul li a{
+  color:white; font-size:18px; padding: 25px 30px;
+  display:inline-block; transition: all 0.5s ease 0s; text-decoration: none;
+  font-family: 'Century Gothic'; text-transform: uppercase;
+}
+nav ul li a:hover{
+  background-color:lightgrey; color:black; transition: all 0.5s ease 0s;
+}
+nav ul li a i{
+  padding-right:10px; color:white; transition: all 0.5s ease 0s;
+  text-align: center;
+}
+nav ul li a:hover i{
+  color:black; transition: all 0.5s ease 0s;
+}
+.principale{
+  display: flex;
+  flex-wrap: wrap;
+  width:100%;
+  height: auto;
+  background: white;
+}
+.contenitore-foto{
+  width: auto;
+  height:auto;
+  margin:10px;
+  padding: 0;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+  border-radius: 10px;
+  border:1px solid black;
+}
+.contenitore-foto img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.testo{
+  width: auto;
+height: auto;
+margin-top:10px;
+padding:10px;
+font-size:18px;
+font-family: 'Century Gothic';
+text-align: left;
+}
+footer nav{
+  width:100%;height: 94px;
+}
+footer nav ul{
+  list-style: none;
+  display:flex;
+justify-content: space-between;
+margin: 20px;
+}
+footer nav ul li{
+  display: inline;
+  margin:auto;
+}
+footer nav ul li a{
+  position: relative;
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background:white;
+}
+footer nav ul li a::before{
+  position: absolute;
+  top:0;left:0;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+  transition-delay: 0.1s;
+}
+footer nav ul li a::before{
+  position: absolute;
+  top:0;left:0;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+  transition-delay: 0.1s;
+}
+ footer p{
+  display:inline-block;
+  width: 100%;
+  margin-top:40px;
+  text-align: center;
+  font-family: 'Century Gothic';
+  font-size:20px;
+}
+footer{
+  margin:0;
+  width: 100%;
+  display: table;
+  height:300px;
+background: linear-gradient(to left,#d3cce3,#e9e4f0);
+border-top:1px solid black;
+}
+footer nav ul li a{
+  border:1px solid black;
+}
+footer nav ul li #ins i{
+  font-size: 37px;
+  color:purple;
+  position: absolute;
+  top:50%;left:55%;
+  transform: translate(-50%,-50%);
+}
+footer nav ul li #fac i{
+  font-size: 37px;
+  color:blue;
+  position: absolute;
+  top:50%;left:55%;
+  transform: translate(-50%,-50%);
+}
+.btn{
+  margin-top:40px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-top:10px;
+}
+.btn a{
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  height: auto;
+  padding:15px;
+  font-size: 28px;
+  text-transform: uppercase;
+  font-family: 'Century Gothic';
+  cursor: pointer;
+  background: white;
+  color:black;
+}
+@media only screen and (min-width:481px) and (max-width:1024px) {
+  header{
+    width: 100%;
+    display:flex;
+    background-color: black;
+    justify-content: flex-start;
+
+  }
+  nav{
+    width:auto; float:left;
+  }
+  nav ul{
+    display: table;
+    float:left;
+
+  }
+  nav ul li{
+    float:left;
+    display: inline-block;
+    padding-left:20px;
+  }
+  nav ul li :last-child{
+    padding-right:5px;
+  }
+  nav ul li a{
+    color:white; font-size:18px; padding: 25px 30px;
+    display:inline-block; transition: all 0.5s ease 0s; text-decoration: none;
+    font-family: 'Century Gothic';
+  }
+  nav ul li a:hover{
+    background-color: transparent; color:white; transition: all 0.5s ease 0s;
+  transform: scale(1.5);
+  }
+  nav ul li a i{
+    padding-right:10px; color:white; transition: all 0.5s ease 0s;
+    text-align: center;
+  }
+  nav ul li a:hover i{
+    color:white; transition: all 0.5s ease 0s;
+  }
+  .contenitore-foto{
+    width: auto;
+    height:auto;
+    margin:10px auto;
+    padding: 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+    border-radius: 10px;
+    border:1px solid black;
+  }
+  .contenitore-foto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .testo{
+    width: auto;
+  height: auto;
+  margin-top:10px;
+  padding:10px;
+  font-size:18px;
+  font-family: 'Century Gothic';
+  text-align: left;
+  }
+  footer{
+    width: 100%;
+    display: flex;
+    height:250px;
+  background:lightgrey;
+  border-top:1px solid black;
+  }
+  .cont-footer{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin:30px;
+  }
+  footer nav{
+    display:flex;
+    width:20%; height: 100%;
+  }
+  footer nav ul{
+    list-style:none;
+    display:flex;
+    flex-direction: column;
+    margin:0;
+    width: 100%;
+    height: 100%;
+  }
+  footer nav ul li{
+    display: inline;
+    margin:auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  footer nav ul li a{
+    position: relative;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    border:1px solid black;
+  }
+  footer nav ul li a i{
+    font-size: 37px;
+    color:#515151;
+    position: absolute;
+    top:50%;left:55%;
+    transform: translate(-50%,-50%);
+  }
+  footer nav ul li a::before{
+    position: absolute;
+    top:0;left:0;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    transition-delay: 0.1s;
+  }
+  footer nav ul li #ins i{
+    font-size: 37px;
+    color:purple;
+    position: absolute;
+    top:50%;left:55%;
+    transform: translate(-50%,-50%);
+
+  }
+  footer nav ul li #fac i{
+    font-size: 37px;
+    color:blue;
+    position: absolute;
+    top:50%;left:55%;
+    transform: translate(-50%,-50%);
+  }
+  .btn{
+    display: flex;
+    align-self: flex-end;
+    position: absolute;
+    right:10%;
+    margin-bottom: 30px;
+    width:auto;
+    height: auto;
+    border-radius: 10px;
+  }
+  .btn a{
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    height: auto;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-family: 'Century Gothic';
+    background: white;
+    color:black;
+    padding:10px;
+    border-radius: 10px;
+  }
+  footer p{
+    width: auto;
+    height: 40px;
+    display: inline-block;
+    margin-top:30px;
+    text-align: center;
+    position: absolute;
+    right: 10%;
+  }
+}
+@media only screen and (min-width:1025px) {
+  header{
+    width: 100%;
+    display:flex;
+    background-color: black;
+    justify-content: flex-start;
+  }
+  nav{
+    width:auto; float:left;
+  }
+  nav ul{
+    display: table;
+    float:left;
+
+  }
+  nav ul li{
+    float:left;
+    display: inline-block;
+    padding-left:20px;
+  }
+  nav ul li :last-child{
+    padding-right:5px;
+  }
+  nav ul li a{
+    color:white; font-size:18px; padding: 25px 30px;
+    display:inline-block; transition: all 0.5s ease 0s; text-decoration: none;
+    font-family: 'Century Gothic';
+  }
+  nav ul li a:hover{
+    background-color: transparent; color:white; transition: all 0.5s ease 0s;
+  transform: scale(1.5);
+  }
+  nav ul li a i{
+    padding-right:10px; color:white; transition: all 0.5s ease 0s;
+    text-align: center;
+  }
+  nav ul li a:hover i{
+    color:white; transition: all 0.5s ease 0s;
+  }
+  .principale{
+    display: flex;
+    flex-wrap: nowrap;
+    width:100%;
+    height: auto;
+  }
+.contenitore-foto{
+  border:1px solid black;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+  width: 415px;
+  height:507px;
+  margin:40px auto 20px 40px;
+}
+.contenitore-foto img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius:10px;
+}
+.testo{
+margin: auto 20px ;
+padding:0;
+font-size:20px;
+font-family: 'Century Gothic';
+text-align: justify;
+}
+
+footer{
+  margin:20px auto 0 auto;
+  width: 100%;
+  height: 300px;
+  display: table;
+background: linear-gradient(to left,#d3cce3,#e9e4f0);
+border-top:1px solid black;
+}
+.cont-footer{
+display: flex;
+height: 300px;
+margin:30px;
+justify-content: space-between;
+}
+footer nav{
+  width:auto;height: 50%;
+  display: flex;
+  align-self:flex-end;
+  margin-left: 70px;
+  margin-bottom: 35px;
+}
+footer nav ul{
+  list-style: none;
+  display:flex;
+justify-content: space-around;
+}
+footer nav ul li{
+  display: inline;
+  margin:20px;
+}
+footer nav ul li a{
+  position: relative;
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background:white;
+  transition: all 0.5s;
+  transition-delay: 0.1s;
+  border:1px solid black;
+}
+footer nav ul li a i{
+  font-size: 37px;
+  transition: all 0.5s;
+  transition-delay: 0.1s;
+  position: absolute;
+  top:50%;left:55%;
+  transform: translate(-50%,-50%);
+}
+footer nav ul li #ins::before{
+  content: '';
+  position: absolute;
+  top:0;left:0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0.6s);
+  background: linear-gradient(to left,#f9ed32,#ee2a7b);
+  border-radius: 50%;
+  z-index: -1;
+  filter: blur(8px);
+  transition: 0.3s;
+  transition-delay: 0.1s;
+}
+footer nav ul li #fac::before{
+  content: '';
+  position: absolute;
+  top:0;left:0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0.6s);
+  background: linear-gradient(to left,#396afc,#2948ff);
+  border-radius: 50%;
+  z-index: -1;
+  filter: blur(8px);
+  transition: 0.3s;
+  transition-delay: 0.1s;
+}
+footer nav ul li a:hover i{color:white;}
+footer nav ul li a:hover::before {transform: scale(1.1);}
+.btn{
+margin-bottom:80px;
+width: auto;
+height: auto;
+display: flex;
+align-self:flex-end;
+position:absolute;
+right:10%;
+}
+.btn a{
+text-decoration: none;
+width: auto;
+height: auto;
+padding:15px;
+font-size: 25px;
+font-family: 'Century Gothic';
+cursor: pointer;
+border:3px solid white;
+border-radius: 8px;
+background: transparent;
+overflow: hidden;
+transition: 0.3s;
+transition-delay: 0.1;
+color:black;
+}
+.btn a:hover{
+background-color:white;
+transition: all 0.5s ease 0s;
+transform: scale(1.3);
+}
+footer p{
+width: auto;
+height: 30px;
+margin-top:165px;
+position: absolute;
+left: 45%;
+}
+}

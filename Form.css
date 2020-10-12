@@ -1,0 +1,516 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin:0;
+  height: auto;
+  font-family: 'Century Gothic';
+}
+header{
+  width: 100%;
+  display:flex;
+  background-color: black;
+  justify-content: flex-start;
+}
+nav{
+  width:100%; float:left;
+}
+nav ul{
+  display: flex;
+  flex-direction: row;
+  margin-left:0;
+}
+nav ul li{
+  float:left;
+  display: inline-block;
+}
+nav ul li :last-child{
+  padding-right:5px;
+}
+nav ul li a{
+  color:white; font-size:20px; padding:5px;
+  display:inline-block;  transition: all 0.5s ease 0s;text-decoration: none;
+  font-family: 'Century Gothic'; text-transform: uppercase;
+}
+nav ul li a i{
+  padding:10px; color:white; transition: all 0.5s ease 0s;
+  text-align: center;
+}
+.testata{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  width:100%;
+  border-radius: 3px;
+  margin-top:40px;
+  padding:20px;
+  background: transparent;
+}
+.testata h1{
+  font-size: 30px;
+  margin: 20px;
+  color:black;
+  font-family: 'Century Gothic';
+  width: 100%;
+  height: auto;
+}
+.testata p{
+  width: auto;
+  height: auto;
+  font-size: 20px;
+  color:black;
+  font-family: 'Century Gothic';
+  margin:0;
+
+}
+.email {
+display: block;
+text-align: center;
+margin-top:60px;
+margin-bottom: 60px;
+}
+.email a{
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+ text-decoration: none;
+  width: 100%;
+  height: 100%;
+  font-size:20px;
+  font-family: 'Century Gothic';
+}
+p{
+  width: 100%;
+  font-size:25px;
+  font-family: 'Century Gothic';
+  margin:0;
+  text-align: center;
+}
+.modulo{
+  padding:20px;
+  background-color: lightgrey;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+.modulo input[type='text'],
+        input[type='email']{
+  background-color: #ffffff;
+  border-radius: 3px;
+  border:1px solid transparent;
+  width: 100%;
+  height: auto;
+  padding:7px;
+  font-size:18px;
+}
+.modulo input[type='text']:invalid,
+        input[type='email']:invalid{
+          border:2px solid red;
+        }
+ label{
+   width: 100%;
+   margin:10px 5px 0 0;
+}
+.modulo .elemento{
+  width: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size:25px;
+  font-family: 'Century Gothic';
+  border-radius: 3px;
+}
+.modulo textarea{
+  width:100%;
+  min-height: 100px;
+  resize: none;
+  font-size:20px;
+}
+.modulo button{
+  margin:20px auto ;
+  font-size:20px;
+  font-family: 'Century Gothic';
+  font-weight: bold;
+  background-color: black;
+  color:white;
+  border:none;
+  border-radius:3px;
+  cursor:pointer;
+  width: 40%;
+  height:60px;
+  text-transform: uppercase;
+}
+footer{
+  background: lightgrey;
+  display: table;
+  width: 100%;
+  border-top:1px solid black;
+}
+.cont-footer{
+display: flex;
+flex-wrap: wrap;
+height: auto;
+}
+footer nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+footer nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+footer nav ul li{
+  float:left;
+  display: inline-block;
+}
+footer nav ul li :last-child{
+  padding-right:5px;
+}
+footer nav ul li a{
+ font-size:30px; padding: 25px 30px;
+  display:inline-block; text-decoration: none;
+  font-family: 'Century Gothic';
+}
+  footer nav ul li #ins i{
+    font-size: 37px;
+    color:purple;
+}
+  footer nav ul li #fac i{
+      font-size: 37px;
+      color:blue;
+    }
+.copyright{
+  display: flex;
+  margin:auto;
+}
+.copyright p{
+  font-family: 'Century Gothic';
+  font-size:20px;
+}
+@media only screen and (min-width:481px) and (max-width:1024px) {
+  .testata{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width:100%;
+    border-radius: 3px;
+    margin-top:40px;
+    padding:20px;
+    background: transparent;
+    }
+    nav ul li a{
+      color:white; font-size:18px; padding: 25px 30px;
+      display:inline-block; transition:all 0.5s ease 0s;text-decoration: none;
+      font-family: 'Century Gothic';
+    }
+  .testata h1{
+    font-weight: 400px;
+    font-size: 30px;
+    margin: 20px;
+    color:black;
+    font-family: 'Century Gothic';
+    width: 100%;
+    height: auto;
+    }
+  .testata p{
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    color:black;
+    font-family: 'Century Gothic';
+    margin:auto;
+  }
+  p{
+    width: 100%;
+    font-size:25px;
+    font-family: 'Century Gothic';
+    margin-bottom:30px;
+    text-align: center;
+  }
+  .modulo{
+    margin:0;
+  }
+  label{
+    width: 100%;
+    margin:0 auto;
+    text-align:left;
+    width: 70%;
+ }
+  .modulo input[type='text'],
+          input[type='email']{
+    background-color: #ffffff;
+    border-radius: 3px;
+    border:1px solid transparent;
+    width: 70%;
+    height: auto;
+    padding:7px;
+    font-size:18px;
+    margin:auto auto 15px auto;
+  }
+  .modulo input[type='text']:invalid,
+          input[type='email']:invalid{
+            border:2px solid red;
+          }
+  .modulo textarea{
+    width:70%;
+    min-height: 100px;
+    resize: none;
+    font-size:20px;
+    margin:auto;
+  }
+  .modulo button{
+    margin:20px auto;
+    font-size:20px;
+    font-family:'Century Gothic';
+    font-weight: bold;
+    background-color: black;
+    color:white;
+    border:none;
+    border-radius:3px;
+    cursor:pointer;
+    width: 30%;
+    height:60px;
+    text-transform: uppercase;
+  }
+  footer{
+    width: 100%;
+    height: auto;
+    display: table;
+  background-color: lightgrey;
+  border-top:1px solid black;
+  }
+  .cont-footer{
+  display: flex;
+  height: auto;
+  margin:50px;
+  justify-content: space-around;
+  }
+  footer nav{
+    width:auto;height: auto;
+    display:flex;
+    align-self: center;
+  }
+  footer nav ul{
+    list-style: none;
+    display:flex;
+  justify-content: space-around;
+  }
+  footer nav ul li{
+    display: inline;
+    margin:20px;
+  }
+  footer nav ul li a{
+    position: relative;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    transition: all 0.5s;
+    transition-delay: 0.1s;
+  }
+  footer nav ul li a i{
+    font-size: 37px;
+    color:#515151;
+    transition: all 0.5s;
+    transition-delay: 0.1s;
+    position: absolute;
+    top:50%;left:55%;
+    transform: translate(-60%,-50%);
+  }
+.copyright{
+  display: flex;
+  margin-top: 40px;
+}
+.copyright p{
+align-self: center;
+}
+}
+@media only screen and (min-width:1025px){
+  .testata{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width:100%;
+    border-radius: 3px;
+    margin-top:30px;
+    padding:20px;
+    background: transparent;
+  }
+  nav ul li a{
+    color:white; font-size:18px; padding: 25px 30px;
+    display:inline-block; transition: all 0.5s ease 0s; text-decoration: none;
+    font-family: 'Century Gothic';
+  }
+nav ul li a:hover{
+  background-color: transparent; color:white; transition: all 0.5s ease 0s;
+transform: scale(1.5);
+}
+  .testata h1{
+    padding:auto;
+    font-weight: 400px;
+    font-size: 30px;
+    margin: 20px;
+    color:black;
+    font-family: 'Century Gothic';
+    width: 100%;
+    height: auto;
+  }
+  .testata p{
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    color:black;
+    font-family: 'Century Gothic';
+    margin:auto;
+  }
+  p{
+    width: 100%;
+    font-size:25px;
+    font-family: 'Century Gothic';
+    margin-bottom:30px;
+    text-align: center;
+  }
+  .modulo{
+    margin:0;
+  }
+  label{
+    width: 50%;
+    margin:0 auto ;
+    text-align: left;
+ }
+  .modulo input[type='text'],
+          input[type='email']{
+    background-color: #ffffff;
+    border-radius: 3px;
+    border:1px solid transparent;
+    width: 50%;
+    height: auto;
+    padding:7px;
+    font-size:18px;
+    margin:auto auto 15px auto;
+    text-align: left;
+  }
+  .modulo input[type='text']:invalid,
+          input[type='email']:invalid{
+            border:2px solid red;
+          }
+  .modulo textarea{
+    width:50%;
+    min-height: 100px;
+    resize: none;
+    font-size:20px;
+    margin:auto;
+  }
+  .modulo button{
+    margin:20px auto;
+    font-size:20px;
+    font-family:'Century Gothic';
+    font-weight: bold;
+    background-color: black;
+    color:white;
+    border:none;
+    border-radius:3px;
+    cursor:pointer;
+    width: 20%;
+    height:60px;
+    text-transform: uppercase;
+  }
+  footer{
+    width: 100%;
+    height: auto;
+    display: table;
+  background-color: lightgrey;
+  border-top:1px solid black;
+  }
+  .cont-footer{
+  display: flex;
+  height: auto;
+  margin:30px;
+  }
+  footer nav{
+    width:auto;height: auto;
+    display:block;
+    margin: auto;
+  }
+  footer nav ul{
+    list-style: none;
+    display:flex;
+  justify-content: space-around;
+  }
+  footer nav ul li{
+    display: inline;
+    margin:20px;
+  }
+  footer nav ul li a{
+    position: relative;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: grey;
+;
+    transition: all 0.5s;
+    transition-delay: 0.1s;
+    border:1px solid black;
+  }
+  footer nav ul li #ins i{
+    font-size: 37px;
+    color:white;
+}
+  footer nav ul li #fac i{
+      font-size: 37px;
+      color:white;
+    }
+  footer nav ul li a i{
+    transition: all 0.5s;
+    transition-delay: 0.1s;
+    position: absolute;
+    top:50%;left:55%;
+    transform: translate(-60%,-50%);
+  }
+  footer nav ul li #ins::before{
+    content: '';
+    position: absolute;
+    top:0;left:0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0.6s);
+    background: linear-gradient(to left,#f9ed32,#ee2a7b);
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(2px);
+    transition: 0.3s;
+    transition-delay: 0.1s;
+  }
+  footer nav ul li #fac::before{
+    content: '';
+    position: absolute;
+    top:0;left:0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0.6s);
+    background-color: blue;
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(8px);
+    transition: 0.3s;
+    transition-delay: 0.1s;
+  }
+  footer nav ul li a:hover i{color:white;}
+  footer nav ul li a:hover::before {transform: scale(1.1);
+  }
+.copyright{
+  display: block;
+  margin:auto;
+}
+.copyright p{
+margin: auto;
+}
+}
